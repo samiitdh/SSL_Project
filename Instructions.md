@@ -52,16 +52,38 @@ events as comma seperated string.Eg., "1,2,54,89,458"
                          
 **Note** whoever writing this make sure before creating the table use the "Preview SQL" button that will view the SQL code,\
 copy and keep it somewhere and upload to repo \
-* Submit the php file that will make the database and tables
+**Note** Add a default admin in individual table with name: admin, roll_no: 69420, password: phpmyadmin, role: admin, event_array: (nothing)
+* Submit the php file or sql file that will make the database and tables
 * Deadline: 27-Nov-2020 (12:00PM afternoon)
 
-**PHP BASIC FILES**
+**PHP FILES**
 First see all the database files and make a database on your machine. \
 \
-First PHP Page: "login.php"\
-Has a basic form with two entrires - "Roll Number" and "Password"\
-If correct data entered display welcome if not take to same page and display "wrong password/roll number"\
+Note that to login we use "unique Number" and Password, where admin has unique number as 69420, \
+for students it is their roll number and for faculty it is 9190010012, where starting 9 means faculty and \
+next 19 is year they joined and 00 is just like that, next 1 means CSE faculty, 00, next 12 means serial number \
 \
+First PHP Page: "login.php"\
+Has a basic form with two entrires - "Unique Number" and "Password"\
+If correct data entered display welcome if not take to same page and display "wrong password/roll number"\
+Second PHP Page:
+**Note** Here we use "validate.php" file which will check the role based on unique number and also check for password correctness\
+If unique number is of admin take to home_admin.php, for faculty take to home_faculty.php and for student take to home_student.php\
+If password or unique number wrong, take to same login.php and display password/unique number wrong.\
+Same in case password or unique number are not entered at all.
+\
+Third PHP Page: "home_admin.php"\
+This page basically has a button that is "Add Individual", which will take to "add_individual.php" file. \
+Other admin features will be added later\
+\
+4th PHP Page: "add_individual.php"\
+This page has a form with "Name", "Unique Number", "Password", "Role" fields.\
+For "Role" field, it has to have two options "Student", "Faculty", admin should select one. \
+Password can be set by admin himself, later we will have a button for student and faculty to change their password.\
+\
+
+
+
 
 
 
