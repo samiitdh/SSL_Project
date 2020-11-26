@@ -7,7 +7,7 @@ First create a table called "event", with "unique_id", "description" as columns.
 \
 "unique_id" column has
 * type - int
-* Length/Values - 11
+* Length/Values - 255
 * Default - none
 * Collation - no changes
 * Attributes - no changes
@@ -51,7 +51,21 @@ events as comma seperated string.Eg., "1,2,54,89,458"
 
                          
 **Note** whoever writing this make sure before creating the table use the "Preview SQL" button that will view the SQL code,\
-copy and keep it somewhere and upload to repo
+copy and keep it somewhere and upload to repo \
+* Submit the php file that will make the database and tables
+* Deadline: 27-Nov-2020 (12:00PM afternoon)
+
+**PHP BASIC FILES**
+First see all the database files and make a database on your machine. \
+\
+First PHP Page: "login.php"\
+Has a basic form with two entrires - "Roll Number" and "Password"\
+If correct data entered display welcome if not take to same page and display "wrong password/roll number"\
+\
+
+
+
+
 
 
 
