@@ -66,11 +66,12 @@ next 19 is year they joined and 00 is just like that, next 1 means CSE faculty, 
 First PHP Page: "login.php"\
 Has a basic form with two entrires - "Unique Number" and "Password"\
 If correct data entered display welcome if not take to same page and display "wrong password/roll number"\
+\
 Second PHP Page:
 **Note** Here we use "validate.php" file which will check the role based on unique number and also check for password correctness\
 If unique number is of admin take to home_admin.php, for faculty take to home_faculty.php and for student take to home_student.php\
 If password or unique number wrong, take to same login.php and display password/unique number wrong.\
-Same in case password or unique number are not entered at all.
+Same in case password or unique number are not entered at all. \
 \
 Third PHP Page: "home_admin.php"\
 This page basically has a button that is "Add Individual", which will take to "add_individual.php" file. \
