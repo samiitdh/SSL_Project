@@ -1,5 +1,7 @@
 # Instructions # 
 **Database In Xampp** \
+Database name is "adiutor". It has two tables as below \
+
 First create a table called "event", with "unique_id", "description" as columns. \
 The table is of type "utf8_general_ci", which is default one. 
 "unique_id" column has
@@ -15,9 +17,13 @@ The table is of type "utf8_general_ci", which is default one.
                        
 "description" column has 
 * type - MEDIUMTEXT
-* Remaining all no changes
+* Remaining all no changes 
+
+Second table is "individual", with "
                          
 **Note** whoever writing this make sure before creating the table use the "Preview SQL" button that will view the SQL code,\
 copy and keep it somewhere and upload to repo
+
+
 
                         
