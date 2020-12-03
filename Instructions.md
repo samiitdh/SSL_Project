@@ -3,7 +3,7 @@
 Database name is "adiutor". It has two tables as below \
 The database is of type "utf8_general_ci", which is default one. \
 \
-First create a table called "event", with "unique_id", "description" as columns. \
+First create a table called "event", with "unique_id", "description", "datetime" as columns. \
 \
 "unique_id" column has
 * type - int
@@ -19,6 +19,11 @@ First create a table called "event", with "unique_id", "description" as columns.
 "description" column has 
 * type - MEDIUMTEXT
 * Remaining all no changes 
+
+"datetime" column has
+* type - "DATETIME"
+* Remaining all no changes
+* Note: The Date time format in Xampp is "YYYY-MM-DD 29:59:59"
 
 Second table is "individual", with "unique_id", "name", "roll_no", "password", "role" and "event_array" as columns. \
 \
