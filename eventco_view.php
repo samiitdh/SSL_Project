@@ -32,7 +32,7 @@ while($row = mysqli_fetch_assoc($extract))
   $title = $row['title'];
   $description = $row['description'];
   $datetime = $row['datetime'];
-  echo "<tr><td>$title</td><td>$datetime</td><td>$description</td><td><a href = 'eventco_view.php?title=$title&datetime=$datetime&description=$description'>Delete</a></td></tr>";
+  echo "<tr><td>$title</td><td>$description</td><td>$datetime</td><td><a href = 'eventco_view.php?title=$title&datetime=$datetime&description=$description'>Delete</a></td></tr>";
 }
 echo "</table>";
 echo "</br>";

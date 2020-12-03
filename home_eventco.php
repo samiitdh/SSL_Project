@@ -36,7 +36,7 @@ while($row = mysqli_fetch_assoc($extract))
   $title = $row['title'];
   $description = $row['description'];
   $datetime = $row['datetime'];
-  echo "<tr><td>$title</td><td>$datetime</td><td>$description</td><td><a href = 'home_eventco.php?action=1&title=$title&datetime=$datetime&description=$description'>Accept</a></td><td><a href = 'home_eventco.php?action=0&title=$title&datetime=$datetime&description=$description'>Deny</a></td></tr>";
+  echo "<tr><td>$title</td><td>$description</td><td>$datetime</td><td><a href = 'home_eventco.php?action=1&title=$title&datetime=$datetime&description=$description'>Accept</a></td><td><a href = 'home_eventco.php?action=0&title=$title&datetime=$datetime&description=$description'>Deny</a></td></tr>";
 }
 echo "</table>";
 echo "</br>";
