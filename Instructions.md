@@ -98,17 +98,51 @@ The table will have the columns "Name", "Roll Number", "Role"(Faculty/Student); 
 
 
 Event Coordinator:
-7th "home_eventco.php"
+7th "home_eventco.php" - Taken by Sathvik\
+Modify init.php to include a table "event_requests" with the columns "Title" and "Description" and table "events" to include a title
 This page will have two buttons - "View Events" (to eventco_view.php) and "New event" (to add_events.php)
 The requested event additions will be displayed here with "Title", "Description" and a button to accept or deny. The 
 
-8th "eventco_view.php"
+8th "eventco_view.php" - Taken by Sathvik\
 The events are displayed as a table with "Title", "Description"; with a delete button for every row.
 
-9th "add_events.php"
-A html form with "Name" and "Description" which adds a row to the "events" table.
+9th "add_events.php" - Taken by Sathvik\
+A html form with "Title", "Description" which adds a row to the "events" table.
+
+Faculty:
+"home_faculty.php" - Taken by Sathvik\
+In this page, there are two buttons - "Events"(to view_events.php) and "View Room Allotment"(to faculty_room.php)
+
+"view_events.php" - Taken by Sathvik\
+In this page, posted events are displayed as a table with a button "Add to timetable" for every row which is then added to the timetable (To be done later). There is a button "Request Event" (to event_req.php). If the individual is an event coordinator, there is a button "Go to Event Coordinator homepage" (to home_eventco.php).
+
+"event_req.php"
+A html form with "Title" and "Description" which are then added to event_requests table and on submission gives an alert "Event Request Submitted"
+
+Modify init.php to include a "rooms" table with columns "date","room_no", "time","owner" and a table "room_reqs" table with similar columns as "rooms"
+"faculty_room.php"
+In this page, there is a text box for entering date which will display the room occupancy info for that date as a table with columns "Room Number", "Time" and "Taken By". There is a button at the bottom "Request Room" (to room_req.php)
+
+"room_req.php"
+This page has an html form with "Room Number"(a dropdown list with default room numbers) "Date" "Time". All these are stored in the "room_reqs" table along with the user's name who made the request.
+
+Students:
+"home_student.php"
+This page has a button "Events"(to view_events.php) **NOTE** Students make use of the same php files as faculty ("view_events.php", "event_req.php")for events feature. See if this idea is good.
+
+
+Administrator:
+Add a button to home_admin.php "Room Occupancy" to take him to "admin_room.php" 
+
+"admin_room.php"
+In this page, there is a text box for entering the room number which a table with the columns "Taken By", "Date", "Time" with the room number as its title (from the "rooms" table). In the bottom of this page, there is a button "View Room Requests"(To admin_roomreq.php)
+
+"admin_roomreq.php"
+This page displays the contents of the mysql table "room_reqs" as an html table with a button for every row "Accept" which deletes the corresponding row in "room_reqs" but adds it to the "rooms" table and "Deny" which deletes the corresponding row in "room_reqs" table.
 
 
 
 
-                        
+
+
+
