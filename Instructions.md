@@ -89,7 +89,7 @@ The columns of the tables will be Name, Roll Number and a delete button for ever
 5th "add_individual.php" - Taken by Sameer\
 This page has a form with "Name", "Roll Number", "Role" fields. (Adding a check for roll number uniqueness while adding individual is up for discussion)
 For "Role" field, it has to have two options "Student", "Faculty", admin should select one. \
-default password is "<role>_<rollno>" where <role> = {student,faculty} and <rollno> is the roll number, later we will have a button for student and faculty to change their password.\
+default password is "{role}_{rollno}" where {role} = {student,faculty} and {rollno} is the roll number, later we will have a button for student and faculty to change their password.\
 
 6th "event_coordinator.php" - Taken by Sameer\
 For this, modify init.php and create a table for "event_co" which contains the columns "unique_id" which is the unique id of the individual who is an event coordinator.
@@ -99,8 +99,8 @@ The table will have the columns "Name", "Roll Number", "Role"(Faculty/Student); 
 
 Event Coordinator:
 7th "home_eventco.php" - Taken by Sathvik\
-Modify init.php to include a table "event_requests" with the columns "Title" and "Description" and table "events" to include a title
-This page will have two buttons - "View Events" (to eventco_view.php) and "New event" (to add_events.php)
+Modify init.php to include a table "event_requests" with the columns "Title" and "Description" and table "events" to include a title\
+This page will have two buttons - "View Events" (to eventco_view.php) and "New event" (to add_events.php)\
 The requested event additions will be displayed here with "Title", "Description" and a button to accept or deny. The 
 
 8th "eventco_view.php" - Taken by Sathvik\
@@ -109,12 +109,15 @@ The events are displayed as a table with "Title", "Description"; with a delete b
 9th "add_events.php" - Taken by Sathvik\
 A html form with "Title", "Description" which adds a row to the "events" table.
 
-Faculty:
+Faculty:\
 "home_faculty.php" - Taken by Sathvik\
-In this page, there are two buttons - "Events"(to view_events.php) and "View Room Allotment"(to faculty_room.php)
+In this page, there are three buttons - "Events"(to view_events.php) "Change Password"(to change_pswd.php) and "View Room Allotment"(to faculty_room.php)
 
 "view_events.php" - Taken by Sathvik\
 In this page, posted events are displayed as a table with a button "Add to timetable" for every row which is then added to the timetable (To be done later). There is a button "Request Event" (to event_req.php). If the individual is an event coordinator, there is a button "Go to Event Coordinator homepage" (to home_eventco.php).
+
+"change_pswd.php"
+An html form with "Current Password" and "New Password". On submission check if current password is correct and then proceed to change the password. If not show a javascript alert.
 
 "event_req.php"
 A html form with "Title" and "Description" which are then added to event_requests table and on submission gives an alert "Event Request Submitted"
@@ -126,12 +129,12 @@ In this page, there is a text box for entering date which will display the room 
 "room_req.php"
 This page has an html form with "Room Number"(a dropdown list with default room numbers) "Date" "Time". All these are stored in the "room_reqs" table along with the user's name who made the request.
 
-Students:
+Students:\
 "home_student.php"
-This page has a button "Events"(to view_events.php) **NOTE** Students make use of the same php files as faculty ("view_events.php", "event_req.php")for events feature. See if this idea is good.
+This page has two buttons - "Change Password"(to change_pswd.php) and "Events"(to view_events.php) **NOTE** Students make use of the same php files as faculty ("view_events.php", "event_req.php")for events feature. See if this idea is good.
 
 
-Administrator:
+Administrator:\
 Add a button to home_admin.php "Room Occupancy" to take him to "admin_room.php" 
 
 "admin_room.php"
@@ -139,10 +142,5 @@ In this page, there is a text box for entering the room number which a table wit
 
 "admin_roomreq.php"
 This page displays the contents of the mysql table "room_reqs" as an html table with a button for every row "Accept" which deletes the corresponding row in "room_reqs" but adds it to the "rooms" table and "Deny" which deletes the corresponding row in "room_reqs" table.
-
-
-
-
-
 
 
