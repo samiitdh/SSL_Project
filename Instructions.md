@@ -92,8 +92,7 @@ For "Role" field, it has to have two options "Student", "Faculty", admin should 
 default password is "{role}_{rollno}" where {role} = {student,faculty} and {rollno} is the roll number, later we will have a button for student and faculty to change their password.\
 
 6th "event_coordinator.php" - Taken by Sameer\
-For this, modify init.php and create a table for "event_co" which contains the columns "unique_id" which is the unique id of the individual who is an event coordinator.
-In this page, the accounts who are event coordinators are displayed as a table. 
+In this page, the accounts who are event coordinators are displayed as a table. The role of an individual is "studentEC" if an individual is both event coordinator and student and "facultyEC" if he is event coordinator and faculty.
 The table will have the columns "Name", "Roll Number", "Role"(Faculty/Student); and a "Remove Role" button for every row which the removes the role of event coordinator for that account.
 
 
