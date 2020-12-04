@@ -3,7 +3,7 @@
 Database name is "adiutor". It has two tables as below \
 The database is of type "utf8_general_ci", which is default one. \
 \
-First create a table called "event", with "unique_id", "description", "datetime" as columns. \
+First create a table called "events", with "unique_id", "description", "datetime" as columns. \
 \
 "unique_id" column has
 * type - int
@@ -161,7 +161,7 @@ When submission of form is succesful, create a table through this php "$id_cours
 A html form with a dropdown list of course names(from courses table) and "Roll Number" of the student which on submission adds a row to the table ($id_courses) get $id from courses table and name of the student from individual table.
 
 Faculty:
-modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php)
+modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines" (to faculty_deadlines.php)
 
 
 
