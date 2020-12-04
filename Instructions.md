@@ -135,30 +135,30 @@ In this page, there is a text box for entering date which will display the room 
 This page has an html form with "Room Number"(a dropdown list with default room numbers) "Date" "Time". All these are stored in the "room_reqs" table along with the user's name who made the request.
 
 Students:\
-"home_student.php"
+"home_student.php" - Taken by Sathvik\
 This page has two buttons - "Change Password"(to change_pswd.php) and "Events"(to view_events.php) **NOTE** Students make use of the same php files as faculty ("view_events.php", "event_req.php")for events feature. See if this idea is good.
 
 
 Administrator:\
-Add a button to home_admin.php "Room Occupancy" to take him to "admin_room.php" 
+Add a button to home_admin.php "Room Occupancy" to take him to "admin_room.php" - Taken by Sathvik
 
-"admin_room.php"
+"admin_room.php" - Taken by Sathvik\
 In this page, there is a text box for entering the room number which a table with the columns "Taken By", "Date", "Time" with the room number as its title (from the "rooms" table). In the bottom of this page, there is a button "View Room Requests"(To admin_roomreq.php)
 
-"admin_roomreq.php"
+"admin_roomreq.php" - Taken by Sathvik\
 This page displays the contents of the mysql table "room_reqs" as an html table with a button for every row "Accept" which deletes the corresponding row in "room_reqs" but adds it to the "rooms" table and "Deny" which deletes the corresponding row in "room_reqs" table.
 
-"view_courses.php"
+"view_courses.php" \
 Modify home_admin.php to include buttons - "View Course List"(view_courses.php) and "Add a Student to a Course"(to add_students.php) \
 The course name and faculty names are displayed as a table with "delete" for every row which deletes the mysql tables "$id_courses"
 There is a button at the bottom "Add Course" which takes us to "add_courses.php"
 
-"add_courses.php"
+"add_courses.php" \
 Modify init.php to include a table "courses" with columns "name" "instuctor" "unique_id".
 A html form with input for name of faculty and course name. Add a check for if name of individual is faculty or student. 
 When submission of form is succesful, create a table through this php "$id_courses" (where $id is the unique id of course) with columns "name" "roll number" and "unique_id"(of the student).
 
-"add_students.php"
+"add_students.php" \
 A html form with a dropdown list of course names(from courses table) and "Roll Number" of the student which on submission adds a row to the table ($id_courses) get $id from courses table and name of the student from individual table.
 
 Faculty:
