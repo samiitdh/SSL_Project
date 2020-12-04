@@ -91,12 +91,12 @@ The accounts are displayed as two tables - one for faculty and other for student
 
 The columns of the tables will be Name, Roll Number and a delete button for every row.\
 
-5th "add_individual.php" - Taken by Sameer\
+5th "add_individual.php" - Done by Sameer\
 This page has a form with "Name", "Roll Number", "Role" fields. (Adding a check for roll number uniqueness while adding individual is up for discussion)
 For "Role" field, it has to have two options "Student", "Faculty", admin should select one. \
 default password is "{role}_{rollno}" where {role} = {student,faculty} and {rollno} is the roll number, later we will have a button for student and faculty to change their password.\
 
-6th "event_coordinator.php" - Taken by Sameer\
+6th "event_coordinator.php" - Done by Sameer\
 In this page, the accounts who are event coordinators are displayed as a table. The role of an individual is "studentEC" if an individual is both event coordinator and student and "facultyEC" if he is event coordinator and faculty.
 The table will have the columns "Name", "Roll Number", "Role"(Faculty/Student); and a "Remove Role" button for every row which the removes the role of event coordinator for that account.
 
@@ -120,17 +120,18 @@ In this page, there are three buttons - "Events"(to view_events.php) "Change Pas
 "view_events.php" - Taken by Sathvik\
 In this page, posted events are displayed as a table with a button "Add to timetable" for every row which is then added to the timetable (To be done later). There is a button "Request Event" (to event_req.php). If the individual is an event coordinator, there is a button "Go to Event Coordinator homepage" (to home_eventco.php).
 
-"change_pswd.php"
+"change_pswd.php" - Taken by Sameer\
 An html form with "Current Password" and "New Password". On submission check if current password is correct and then proceed to change the password. If not show a javascript alert.
 
-"event_req.php"
+"event_req.php" - Taken by Sameer\
 A html form with "Title" and "Description" which are then added to event_requests table and on submission gives an alert "Event Request Submitted"
 
+Below Taken by Sameer\
 Modify init.php to include a "rooms" table with columns "date","room_no", "time","owner" and a table "room_reqs" table with similar columns as "rooms"
-"faculty_room.php"
+"faculty_room.php" - Taken by Sameer\
 In this page, there is a text box for entering date which will display the room occupancy info for that date as a table with columns "Room Number", "Time" and "Taken By". There is a button at the bottom "Request Room" (to room_req.php)
 
-"room_req.php"
+"room_req.php" - Taken by Sameer\
 This page has an html form with "Room Number"(a dropdown list with default room numbers) "Date" "Time". All these are stored in the "room_reqs" table along with the user's name who made the request.
 
 Students:\
