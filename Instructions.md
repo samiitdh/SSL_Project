@@ -102,15 +102,15 @@ The table will have the columns "Name", "Roll Number", "Role"(Faculty/Student); 
 
 
 Event Coordinator:
-7th "home_eventco.php" - Taken by Sathvik\
+7th "home_eventco.php" - Done by Sathvik\
 Modify init.php to include a table "event_requests" with the columns "Title" and "Description" and table "events" to include a title\
 This page will have two buttons - "View Events" (to eventco_view.php) and "New event" (to add_events.php)\
 The requested event additions will be displayed here with "Title", "Description" and a button to accept or deny. The 
 
-8th "eventco_view.php" - Taken by Sathvik\
+8th "eventco_view.php" - Done by Sathvik\
 The events are displayed as a table with "Title", "Description"; with a delete button for every row.
 
-9th "add_events.php" - Taken by Sathvik\
+9th "add_events.php" - Done by Sathvik\
 A html form with "Title", "Description" which adds a row to the "events" table.
 
 Faculty:\
@@ -146,5 +146,22 @@ In this page, there is a text box for entering the room number which a table wit
 
 "admin_roomreq.php"
 This page displays the contents of the mysql table "room_reqs" as an html table with a button for every row "Accept" which deletes the corresponding row in "room_reqs" but adds it to the "rooms" table and "Deny" which deletes the corresponding row in "room_reqs" table.
+
+"view_courses.php"
+Modify home_admin.php to include buttons - "View Course List"(view_courses.php) and "Add a Student to a Course"(to add_students.php) \
+The course name and faculty names are displayed as a table with "delete" for every row which deletes the mysql tables "$id_courses"
+There is a button at the bottom "Add Course" which takes us to "add_courses.php"
+
+"add_courses.php"
+Modify init.php to include a table "courses" with columns "name" "instuctor" "unique_id".
+A html form with input for name of faculty and course name. Add a check for if name of individual is faculty or student. 
+When submission of form is succesful, create a table through this php "$id_courses" (where $id is the unique id of course) with columns "name" "roll number" and "unique_id"(of the student).
+
+"add_students.php"
+A html form with a dropdown list of course names(from courses table) and "Roll Number" of the student which on submission adds a row to the table ($id_courses) get $id from courses table and name of the student from individual table.
+
+Faculty:
+modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php)
+
 
 
