@@ -150,7 +150,7 @@ This page displays the contents of the mysql table "room_reqs" as an html table 
 
 "view_courses.php" \
 Modify home_admin.php to include buttons - "View Course List"(view_courses.php) and "Add a Student to a Course"(to add_students.php) \
-The course name and faculty names are displayed as a table with "delete" for every row which deletes the mysql tables "$id_courses"
+The course name and faculty names are displayed as a table with "delete" for every row which deletes the mysql tables "$id_courses" and the corresponding row in "courses"
 There is a button at the bottom "Add Course" which takes us to "add_courses.php"
 
 "add_courses.php" \
@@ -162,7 +162,26 @@ When submission of form is succesful, create a table through this php "$id_cours
 A html form with a dropdown list of course names(from courses table) and "Roll Number" of the student which on submission adds a row to the table ($id_courses) get $id from courses table and name of the student from individual table.
 
 Faculty:
-modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines" (to faculty_deadlines.php)
+modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines of Other Courses" (to faculty_deadlines.php)
+
+Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "dateTime" whenever a course is created with unique_id $id.
+"faculty_courses.php"
+In this page, a dropdown list of courses taught by this faculty which on submitting displays a table of course deadlines with delete button for every row. At the bottom of the page, there is a button "Add a Deadline to this Course" (to "new_deadline.php")
+
+"new_deadlines.php"
+This page receives the course id ($id) from previous page. There is an html form which adds a row to "$id_deadlines" table.
+
+"faculty_deadlines.php"
+Here, we have a dropdown list of dates which on submitting shows all the deadlines (for every course) on that day.
+
+Modify add_individual.php to create a table "{unique_id}_timetable" table with columns "title" "description" "datetime" and "{unique_id}_events" with same columns as events.(unique_id of individual).
+
+UPDATE "view_events.php"
+When "Add to timetable" is clicked for an event, it is added to {unique_id}_events table.
+
+UPDATE "home_student.php":
+This page has two html tables - Deadlines and My Events. Deadlines show the deadlines of the courses related to the individual (Except those from the {unique_id}_timetable) for that particular day. Every row has a "Mark as Done" button which adds a row to {unique_id}_timetable and wont be shown in the html table. My Events table shows the events from {unique_id}_events table with a delete button for every row which deletes the corresponding mysql row.
 
 
-
+UPDATE "home_faculty.php":
+same updates as for home_student.php
