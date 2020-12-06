@@ -36,7 +36,7 @@ else
     <h2> Enter Current and New password </h2>
         <form action='change_pswd_helper.php' method='POST'>
             <label for="roll_no"> <b> Roll Number </b> <br/>
-                <input type="number" name="roll_no"> <br/> <br/> 
+                <input type="number" name="roll_no" value=<? $roll_no ?> > <br/> <br/> 
             </label>
             <label for="old_passwd"> <b> Current Password </b> <br/>
                 <input type="password" name="old_passwd"> <br/> <br/> 
