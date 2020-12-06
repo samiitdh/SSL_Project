@@ -3,4 +3,6 @@ $roll_no = $_SESSION['roll_no'];
 echo "<form action='view_events.php'><input type=submit value='Events'></form>";
 echo "<form action='change_pswd.php?roll_no=$roll_no' method='get'><input type=submit value='Change Password'></form>";
 echo "<form action='faculty_room.php'><input type=submit value='View Room Allotment'></form>";
+echo "<form action='faculty_courses.php'><input type=submit value='View My Courses'></form>";
+echo "<form action='faculty_deadlines.php'><input type=submit value='View Deadlines of all the Courses'></form>";
 ?>
