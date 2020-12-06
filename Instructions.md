@@ -135,7 +135,7 @@ In this page, there is a text box for entering date which will display the room 
 This page has an html form with "Room Number"(a dropdown list with default room numbers) "Date" "Time". All these are stored in the "room_reqs" table along with the user's name who made the request.
 
 Students:\
-"home_student.php" - Taken by Sathvik\
+"home_student.php" - Done by Sathvik\
 This page has two buttons - "Change Password"(to change_pswd.php) and "Events"(to view_events.php) **NOTE** Students make use of the same php files as faculty ("view_events.php", "event_req.php")for events feature. See if this idea is good.
 
 
