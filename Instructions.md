@@ -166,7 +166,7 @@ Faculty:
 modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines of Other Courses" (to faculty_deadlines.php) - Done by Sathvik\
 
 Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "datetime" whenever a course is created with unique_id $id. - Taken by Sathvik\
-"faculty_courses.php" - Taken by Sathvik\
+"faculty_courses.php" - Done by Sathvik\
 In this page, a dropdown list of courses taught by this faculty which on submitting displays a table of course deadlines with delete button for every row. At the bottom of the page, there is a button "Add a Deadline to this Course" (to "new_deadline.php"). 
 
 "new_deadline.php"
