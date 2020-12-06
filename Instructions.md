@@ -121,6 +121,7 @@ In this page, there are three buttons - "Events"(to view_events.php) "Change Pas
 In this page, posted events are displayed as a table with a button "Add to timetable" for every row which is then added to the timetable (To be done later). There is a button "Request Event" (to event_req.php). If the individual is an event coordinator, there is a button "Go to Event Coordinator homepage" (to home_eventco.php).
 
 "change_pswd.php" - Taken by Sameer\
+This form gets roll number via POST when w press change password button in other files.
 An html form with "Current Password" and "New Password". On submission check if current password is correct and then proceed to change the password. If not show a javascript alert.
 
 "event_req.php" - Taken by Sameer\
