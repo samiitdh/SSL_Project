@@ -162,14 +162,14 @@ When submission of form is succesful, create a table through this php "$id_cours
 A html form with a dropdown list of course names(from courses table) and "Roll Number" of the student which on submission adds a row to the table ($id_courses) get $id from courses table and name of the student from individual table.
 
 Faculty:
-modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines of Other Courses" (to faculty_deadlines.php)
+modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines of Other Courses" (to faculty_deadlines.php) - Taken by Sathvik\
 
-Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "dateTime" whenever a course is created with unique_id $id.
-"faculty_courses.php"
-In this page, a dropdown list of courses taught by this faculty which on submitting displays a table of course deadlines with delete button for every row. At the bottom of the page, there is a button "Add a Deadline to this Course" (to "new_deadline.php")
+Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "dateTime" whenever a course is created with unique_id $id. - Taken by Sathvik
+"faculty_courses.php" - Taken by Sathvik\
+In this page, a dropdown list of courses taught by this faculty which on submitting displays a table of course deadlines with delete button for every row. At the bottom of the page, there is a button "Add a Deadline to this Course" (to "new_deadline.php"). 
 
-"new_deadlines.php"
-This page receives the course id ($id) from previous page. There is an html form which adds a row to "$id_deadlines" table.
+"new_deadline.php"
+This page has a form with a dropdown list of courses taught by this faculty. There is an html form which adds a row to "$id_deadlines" table.
 
 "faculty_deadlines.php"
 Here, we have a dropdown list of dates which on submitting shows all the deadlines (for every course) on that day.
