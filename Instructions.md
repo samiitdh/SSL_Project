@@ -163,9 +163,9 @@ When submission of form is succesful, create a table through this php "$id_cours
 A html form with a dropdown list of course names(from courses table) and "Roll Number" of the student which on submission adds a row to the table ($id_courses) get $id from courses table and name of the student from individual table.
 
 Faculty:
-modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines of Other Courses" (to faculty_deadlines.php) - Taken by Sathvik\
+modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines of Other Courses" (to faculty_deadlines.php) - Done by Sathvik\
 
-Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "dateTime" whenever a course is created with unique_id $id. - Taken by Sathvik
+Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "dateTime" whenever a course is created with unique_id $id. - Taken by Sathvik\
 "faculty_courses.php" - Taken by Sathvik\
 In this page, a dropdown list of courses taught by this faculty which on submitting displays a table of course deadlines with delete button for every row. At the bottom of the page, there is a button "Add a Deadline to this Course" (to "new_deadline.php"). 
 
@@ -178,7 +178,7 @@ Here, we have a dropdown list of dates which on submitting shows all the deadlin
 Modify add_individual.php to create a table "{unique_id}_timetable" table with columns "title" "description" "datetime" and "{unique_id}_events" with same columns as events.(unique_id of individual). - Taken by Sameer
 
 UPDATE "view_events.php"
-When "Add to timetable" is clicked for an event, it is added to {unique_id}_events table.
+When "Add to timetable" is clicked for an event, it is added to {unique_id}_events table. - Done by Sathvik
 
 UPDATE "home_student.php":
 This page has two html tables - Deadlines and My Events. Deadlines show the deadlines of the courses related to the individual (Except those from the {unique_id}_timetable) for that particular day. Every row has a "Mark as Done" button which adds a row to {unique_id}_timetable and wont be shown in the html table. My Events table shows the events from {unique_id}_events table with a delete button for every row which deletes the corresponding mysql row.
