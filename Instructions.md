@@ -124,15 +124,15 @@ In this page, posted events are displayed as a table with a button "Add to timet
 This form gets roll number via POST when we press change password button in other files.
 An html form with "Current Password" and "New Password". On submission check if current password is correct and then proceed to change the password. If not show a javascript alert.
 
-"event_req.php" - Taken by Sameer\
+"event_req.php" - Done by Sameer\
 A html form with "Title" and "Description" which are then added to event_requests table and on submission gives an alert "Event Request Submitted"
 
 Below Done by Sameer\
 Modify init.php to include a "rooms" table with columns "unique_id", "date","room_no", "from_time", "to_time", "owner" and a table "room_reqs" table with similar columns as "rooms"
-"faculty_room.php" - Taken by Sameer\
+"faculty_room.php" - Done by Sameer\
 In this page, there is a text box for entering date which will display the room occupancy info for that date as a table with columns "Room Number", "Time" and "Taken By". There is a button at the bottom "Request Room" (to room_req.php)
 
-"room_req.php" - Taken by Sameer\
+"room_req.php" - Done by Sameer\
 This page has an html form with "Room Number"(a dropdown list with default room numbers) "Date" "Time". All these are stored in the "room_reqs" table along with the user's name who made the request.
 
 Students:\
@@ -175,7 +175,7 @@ This page has a form with a dropdown list of courses taught by this faculty. The
 "faculty_deadlines.php"
 Here, we have a dropdown list of dates which on submitting shows all the deadlines (for every course) on that day.
 
-Modify add_individual.php to create a table "{unique_id}_timetable" table with columns "title" "description" "datetime" and "{unique_id}_events" with same columns as events.(unique_id of individual). - Taken by Sameer
+Modify add_individual.php to create a table "{unique_id}_timetable" table with columns "title" "description" "datetime" and "{unique_id}_events" with same columns as events.(unique_id of individual). - Done by Sameer
 
 UPDATE "view_events.php"
 When "Add to timetable" is clicked for an event, it is added to {unique_id}_events table. - Done by Sathvik
