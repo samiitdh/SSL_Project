@@ -2,7 +2,7 @@
 
 if(array_key_exists('roll_no', $_POST))
 {
-    $roll_no = $_POST['roll_no'];
+    $roll_no = $_GET['roll_no'];
 }
 else
 {
