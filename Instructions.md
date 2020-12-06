@@ -114,7 +114,7 @@ The events are displayed as a table with "Title", "Description"; with a delete b
 A html form with "Title", "Description" which adds a row to the "events" table.
 
 Faculty:\
-"home_faculty.php" - Taken by Sathvik\
+"home_faculty.php" - Done by Sathvik\
 In this page, there are three buttons - "Events"(to view_events.php) "Change Password"(to change_pswd.php) and "View Room Allotment"(to faculty_room.php)
 
 "view_events.php" - Taken by Sathvik\
