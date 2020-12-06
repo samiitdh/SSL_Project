@@ -180,9 +180,9 @@ Modify add_individual.php to create a table "{unique_id}_timetable" table with c
 UPDATE "view_events.php"
 When "Add to timetable" is clicked for an event, it is added to {unique_id}_events table. - Done by Sathvik
 
-UPDATE "home_student.php":
+UPDATE "home_student.php": - Taken by Sathvik\
 This page has two html tables - Deadlines and My Events. Deadlines show the deadlines of the courses related to the individual (Except those from the {unique_id}_timetable) for that particular day. Every row has a "Mark as Done" button which adds a row to {unique_id}_timetable and wont be shown in the html table. My Events table shows the events from {unique_id}_events table with a delete button for every row which deletes the corresponding mysql row.
 
 
-UPDATE "home_faculty.php":
+UPDATE "home_faculty.php": - Taken by Sathvik\
 same updates as for home_student.php
