@@ -140,7 +140,7 @@ This page has two buttons - "Change Password"(to change_pswd.php) and "Events"(t
 
 
 Administrator:\
-Add a button to home_admin.php "Room Occupancy" to take him to "admin_room.php" - Taken by Sathvik
+Add a button to home_admin.php "Room Occupancy" to take him to "admin_room.php" - Done by Sathvik
 
 "admin_room.php" - Done by Sathvik\
 In this page, there is a text box for entering the room number which a table with the columns "Taken By", "Date", "Time" (from the "rooms" table). In the bottom of this page, there is a button "View Room Requests"(To admin_roomreq.php)
