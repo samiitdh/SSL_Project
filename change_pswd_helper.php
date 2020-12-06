@@ -35,5 +35,9 @@ else
 {
     echo "Please enter roll number correctly";
 }
-
 ?>
+<form action='change_pswd.php' method='POST'>
+    <label> 
+        <input type="submit" value="Click here to go back"> 
+    </label>
+</form>
