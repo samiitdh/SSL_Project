@@ -142,10 +142,10 @@ This page has two buttons - "Change Password"(to change_pswd.php) and "Events"(t
 Administrator:\
 Add a button to home_admin.php "Room Occupancy" to take him to "admin_room.php" - Taken by Sathvik
 
-"admin_room.php" - Taken by Sathvik\
-In this page, there is a text box for entering the room number which a table with the columns "Taken By", "Date", "Time" with the room number as its title (from the "rooms" table). In the bottom of this page, there is a button "View Room Requests"(To admin_roomreq.php)
+"admin_room.php" - Done by Sathvik\
+In this page, there is a text box for entering the room number which a table with the columns "Taken By", "Date", "Time" (from the "rooms" table). In the bottom of this page, there is a button "View Room Requests"(To admin_roomreq.php)
 
-"admin_roomreq.php" - Taken by Sathvik\
+"admin_roomreq.php" - Done by Sathvik\
 This page displays the contents of the mysql table "room_reqs" as an html table with a button for every row "Accept" which deletes the corresponding row in "room_reqs" but adds it to the "rooms" table and "Deny" which deletes the corresponding row in "room_reqs" table.
 
 "view_courses.php" - taken by mayank \
