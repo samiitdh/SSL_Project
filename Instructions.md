@@ -165,7 +165,7 @@ A html form with a dropdown list of course names(from courses table) and "Roll N
 Faculty:
 modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines of Other Courses" (to faculty_deadlines.php) - Done by Sathvik\
 
-Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "datetime" whenever a course is created with unique_id $id. - Taken by Sathvik\
+Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "datetime" whenever a course is created with unique_id $id. - Taken by Mayank\
 "faculty_courses.php" - Done by Sathvik\
 In this page, a dropdown list of courses taught by this faculty which on submitting displays a table of course deadlines with delete button for every row. At the bottom of the page, there is a button "Add a Deadline to this Course" (to "new_deadline.php"). 
 
@@ -180,9 +180,9 @@ Modify add_individual.php to create a table "{unique_id}_timetable" table with c
 UPDATE "view_events.php"
 When "Add to timetable" is clicked for an event, it is added to {unique_id}_events table. - Done by Sathvik
 
-UPDATE "home_student.php": - Taken by Sathvik\
+UPDATE "home_student.php": - Done by Sathvik\
 This page has two html tables - Deadlines and My Events. Deadlines show the deadlines of the courses related to the individual (Except those from the {unique_id}_timetable) for that particular day. Every row has a "Mark as Done" button which adds a row to {unique_id}_timetable and wont be shown in the html table. My Events table shows the events from {unique_id}_events table with a delete button for every row which deletes the corresponding mysql row.
 
 
-UPDATE "home_faculty.php": - Taken by Sathvik\
+UPDATE "home_faculty.php": - Done by Sathvik\
 same updates as for home_student.php
