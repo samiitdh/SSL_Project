@@ -117,7 +117,7 @@ Faculty:\
 "home_faculty.php" - Done by Sathvik\
 In this page, there are three buttons - "Events"(to view_events.php) "Change Password"(to change_pswd.php) and "View Room Allotment"(to faculty_room.php)
 
-"view_events.php" - Taken by Sathvik\
+"view_events.php" - Done by Sathvik\
 In this page, posted events are displayed as a table with a button "Add to timetable" for every row which is then added to the timetable (To be done later). There is a button "Request Event" (to event_req.php). If the individual is an event coordinator, there is a button "Go to Event Coordinator homepage" (to home_eventco.php).
 
 "change_pswd.php" - Done by Sameer\
