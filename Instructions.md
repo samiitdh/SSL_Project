@@ -120,15 +120,15 @@ In this page, there are three buttons - "Events"(to view_events.php) "Change Pas
 "view_events.php" - Taken by Sathvik\
 In this page, posted events are displayed as a table with a button "Add to timetable" for every row which is then added to the timetable (To be done later). There is a button "Request Event" (to event_req.php). If the individual is an event coordinator, there is a button "Go to Event Coordinator homepage" (to home_eventco.php).
 
-"change_pswd.php" - Taken by Sameer\
-This form gets roll number via POST when w press change password button in other files.
+"change_pswd.php" - Done by Sameer\
+This form gets roll number via POST when we press change password button in other files.
 An html form with "Current Password" and "New Password". On submission check if current password is correct and then proceed to change the password. If not show a javascript alert.
 
 "event_req.php" - Taken by Sameer\
 A html form with "Title" and "Description" which are then added to event_requests table and on submission gives an alert "Event Request Submitted"
 
-Below Taken by Sameer\
-Modify init.php to include a "rooms" table with columns "date","room_no", "time","owner" and a table "room_reqs" table with similar columns as "rooms"
+Below Done by Sameer\
+Modify init.php to include a "rooms" table with columns "unique_id", "date","room_no", "from_time", "to_time", "owner" and a table "room_reqs" table with similar columns as "rooms"
 "faculty_room.php" - Taken by Sameer\
 In this page, there is a text box for entering date which will display the room occupancy info for that date as a table with columns "Room Number", "Time" and "Taken By". There is a button at the bottom "Request Room" (to room_req.php)
 
