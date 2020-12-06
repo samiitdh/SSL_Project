@@ -37,4 +37,11 @@ while($row = mysqli_fetch_assoc($extract))
 }
 echo "</table>";
 echo "</br>";
+if(isset($role))
+{
+  if($role == 'studentEC' || $role == 'facultyEC')
+  {
+    echo "<form action='home_eventco.php'><input type=submit value='Go to Event Coordinator homepage'></form>";
+  }
+}
 ?>
