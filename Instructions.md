@@ -175,7 +175,7 @@ This page has a form with a dropdown list of courses taught by this faculty. The
 "faculty_deadlines.php"
 Here, we have a dropdown list of dates which on submitting shows all the deadlines (for every course) on that day.
 
-Modify add_individual.php to create a table "{unique_id}_timetable" table with columns "title" "description" "datetime" and "{unique_id}_events" with same columns as events.(unique_id of individual).
+Modify add_individual.php to create a table "{unique_id}_timetable" table with columns "title" "description" "datetime" and "{unique_id}_events" with same columns as events.(unique_id of individual). - Taken by Sameer
 
 UPDATE "view_events.php"
 When "Add to timetable" is clicked for an event, it is added to {unique_id}_events table.
