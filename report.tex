@@ -23,6 +23,7 @@ Our project adiutor is a handy tool for students and teachers. Our project can b
 \subsection{Web Designing}
 \begin{description}
     \item[HTML5] Basic design and other features like forms, tables etc.
+    \item[Bootstrap CSS] For styling the webpages
 \end{description}
 
 \subsection{Server Side Scripting Language}
@@ -32,24 +33,24 @@ Our project adiutor is a handy tool for students and teachers. Our project can b
 
 \subsection{Database}
 \begin{description}
-    \item[MySQL] Used for the managing data
+    \item[MySQL] For database management
 \end{description}
 
-\subsection{@}
+\subsection{HTTP Server}
 \begin{description}
-    \item[XAMPP] @
+    \item[Apache Server(XAMPP)] Server for running the PHP files
 \end{description}
 
-\subsection{@}
+\subsection{Hosting Files and Version-control}
 \begin{description}
-    \item[GitHub] @
+    \item[GitHub] Hosting files, facilitate working with team members and version-control
 \end{description}
 
 \section{Compatibility of this Project}
 This project is made and tested on \textbf{localhost}. So it is compatible on localhost network provided all the files of this  \href{https://github.com/samiitdh/SSL_Project}{repository} are present.
 
 \section{Access to Adiutor}
-Admin is in the database by default. The login credentials of admin are - Username: @ and Password: @. Once admin is logged in, he can add students or faculty through an html form. Their username is: @ Their default password is: @.
+Admin is in the database by default. The login credentials of admin are - Username: 69420 and Password: phpmyadmin. Once admin is logged in, he can add students or faculty through an html form. The username is their roll number and their default password is: <role>\_<roll.no> (where <role> is student or faculty and <roll.no> is the rollnumber of the individual) which can be changed later.
 
 \section{Modes of Login}
 The homepages for admin, faculty, students and event coordinator are all different. 
@@ -62,12 +63,44 @@ The homepages for admin, faculty, students and event coordinator are all differe
 \end{description}
 
 \section{Implementation Files}
-@
+These are the list of files we used in this project:
+\begin{description}
+\item[init.php, dbcom.php] Create a connection with the database
+\item[insert.php] Insert admin credential entries into the database
+\item[login.php, logout.php] For login and logout
+\item[validate.php] Checks if the entered login credentials are valid and if yes, redirects to corresponding homepages
+\item[change\_pswd.php, change\_pswd\_helper.php ] Change the password of an account
+\item[home\_admin.php] Homepage of the admin
+\item[admin\_view.php] Page for admin to view existing accounts
+\item[delete.php] Used by admin to delete an account
+\item[add\_individual.php, add\_individual\_helper.php] Here admin can add an individual to the database
+\item[add\_students.php, student\_varification.php] These files facilitate admin to add student for a course
+\item[event\_coordinator.php, event\_coordinator\_helper.php] Admin can view the list of event coordinators, delete an existing event coordinator and add a new event coordinator
+\item[admin\_room.php] Admin can view the room occupancy info here
+\item[admin\_roomreq.php] Admin can manage room requests here
+\item[add\_courses.php] Courses can be added to database by admin
+\item[course\_validation.php] Checks the form data given to add\_courses.php
+\item[view\_courses.php] Admin can view the courses in the database
+\item[search.php] Admin can search for individuals here
+\item[delete\_course.php] Admin can delete a course from the database
+\item[home\_faculty.php] Homepage for faculty
+\item[home\_student.php] Homepage for students
+\item[view\_events.php] Individual can view posted events here and add them to be displayed in his/her homepage
+\item[faculty\_room.php] Faculty can view the room allocation info here
+\item[room\_req.php] Faculty can send a request for a room to the admin here
+\item[faculty\_courses.php] Faculty can view and delete deadlines for the courses they teach
+\item[new\_deadine.php] Faculty can add a new deadline for a course here
+\item[deadline\_validation.php] This page checks the form data for a new deadline
+\item[faculty\_deadlines.php] Here faculty can view deadlines of every course (including courses not taught by them)
+\item[home\_eventco.php] Homepage of event coordinator
+\item[add\_events.php] Event coordinator can add new events here
+\item[event\_req.php] Event coordinator can view requests of events posted by others which can be accepted or denied
+\item[eventco\_view.php] Event coordinator can view existing posted events which can be deleted
+\end{description}
 
-\section{DBMS}
-@
-
-\section{Flowcharts for the webpages}
-@
+\section{Database}
+\begin{itemize}
+    \item @
+\end{itemize}
 
 \end{document}
