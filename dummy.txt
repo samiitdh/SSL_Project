@@ -1,0 +1,169 @@
+Individuals :
+1. Mayank Mittal 190010001
+2. EJVS Sathvik Goud 190010002
+3. Mohammad Sameer 190010003
+4. Ch Manohar 190010004
+5. V Anirudh 190010005 - EC
+6. Ch Rohith 190010006
+7. Newtan AG 190010007
+8. Ameen N 190010008
+9. Pranav Kanire 190010009
+
+1. Arun Bhat 190020001
+2. Ayush Gupta 190020002
+3. Akshay Jose 190020003
+4. Neville Thomas 190020004 - EC
+5. Sarvan Kumar 190020005
+6. Naveen M 190020006
+7. Pranay K 190020007
+8. Dean Thomas 190020008
+9. Monu Goyal 190020009
+
+1. Rajesh Khanna 9190010006
+2. James Moriarty 9190020007 - EC
+3. Tamal Das - 9190030008
+
+James Moriarty has a few events in his time table
+
+Event Added by James Moriarty as EC role - 
+Title - Master in Lyon
+Des - 
+In particular, there is possibility of following a master in the computer science department of ENS de Lyon.
+There are opportunities to continue with a PhD
+
+Date - 14/12/2020
+Time - 10:00 am
+
+Title - One Day Workshop organized by IIT Goa
+Des - I would like to invite you in One Day Workshop on Particulates, Colloids, and Interfaces and the inauguration of CoE-PCI on 14th December 2020 (online), will be organized by CoE-PCI, IIT Goa. Please find the attached brochure of the event and encourage your colleagues to register who may be benefited. It is free but the registration is necessary (by 12/12/2020).
+
+Date - 16/12/2020
+Time - 03:00 pm
+
+Event Request by Rajesh Khanna as Faculty
+Event Accepted by James
+Title - Personality Development Session 
+Des - Start with gaining insight into unlocking the secret to effective communication skills. We are live on ZOOM on the 5th of December at 5:00 PM
+
+Event Request by Rajesh Khanna as Faculty
+
+Title - Innovation challenge and Webinar by UNIDO
+Des - Dear all,
+UNIDO has launched a project The Facility of Low Carbon Deployment - FLCTD with an objective to address technology gaps through use of energy efficiency technologies and support the deployment and scale-up of low-carbon technologies in India
+
+Date  - 18/12/2020
+Time - 05:00 pm
+
+Room Request by Rajesh Khanna
+
+Room - 204
+Date - 14/12/2020
+Time - 12:00 pm to 01:00pm
+
+Course by Tamal
+Software System Laboratory
+
+Course by Rajesh
+Chemistry
+
+Course by James
+Digital and Analog Circuits
+
+
+All Students are in chemistry
+All electrical students in Analog Circuits
+All Comouter students in SSL
+
+Rajesh pass change to rajesh
+
+Room Request for class by Rajesh
+204, 26, 105 - 09:00 to 10:00 10 and 11 and 12
+
+Deadline by Rajesh 
+Title - Assignment 2 - Chemistry
+Des - Please Submit the assignment question before the required time
+Date - 13/12/2020
+Time - 11:59:00 pm
+
+Title - Project Submission - Chemistry
+Des - Submit the project
+Date - 16/12/2020
+Time - 10:00am
+
+Title - Final Exam - Chemistry
+Des - The final exam
+Date - 21/12/2020
+Time - 02:00pm
+
+Deadline by James 
+Title - Assignment - Circuits
+Des - Please Submit the assignment question before the required time
+Date - 12/12/2020
+Time - 11:59:00 pm
+
+Title - Project Submission for Circuits
+Des - Submit the project - Circuits
+Date - 16/12/2020
+Time - 09:00am
+
+Title - Final Exam - Circuits
+Des - The final exam
+Date - 22/12/2020
+Time - 02:00pm
+
+Room Request for class by James
+26 - 11:00 to 12:00 10 and 11 and 12
+
+Tamal Das pass changed to tamal
+
+Deadline by Tamal
+Title - Assignment - SSL
+Des - Please Submit the assignment question before the required time
+Date - 13/12/2020
+Time - 11:59:00 pm
+
+Title - Project Submission - SSL
+Des - Submit the project
+Date - 17/12/2020
+Time - 11:00am
+
+Title - Final Exam - SSL
+Des - The final exam
+Date - 23/12/2020
+Time - 02:00pm
+
+Room Request for class by Tamal
+107 - 02:00 to 05:00 10 and 11 and 12
+
+Event Request by Tamal Das as Faculty
+Title - Green Charcoal Hackathon
+des - The Office of the Principal Scientific Adviser, Government of India would like to inform that NTPC ( National Thermal Power Corporation)  has undertaken an initiative to explore innovative technologies which are economical and environmentally friendly in pursuit to reduce carbon footprint in the process of converting agro-residue to charcoal. To fast-track, the technology development a challenge named as Green Charcoal Hackathon is being organised
+
+Date - 26/12/2020
+Time - 09:00 pm
+
+Mayank pass changed to mayank
+
+Mayank Mittal event Request 
+Title - Call for recruitment in the PR team
+Des - CDC is happy to share with you all that due to the excessive increase in the number of companies approaching IIT Dharwad, we are expanding our PR team so that we can effectively manage and contact companies for our placements and internships.
+
+Date - 19/12/2020
+Time - 10:00 pm
+
+Neville pass changed to thomas
+
+Neville added an event as EC
+Title - Music Night
+Des - A musical night in Bhoopali
+
+Date - 20/12/2020
+Time - 09:30pm
+
+
+
+
+
+
+
+

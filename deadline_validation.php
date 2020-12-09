@@ -4,17 +4,19 @@ session_start();
 if(isset($_POST['deadline_time'])){
     $roll = $_SESSION['roll_no'];
     include './dbcom.php';
-    $course_name = $_POST['name'];
+    $course_title = $_POST['title'];
     $course_des = $_POST['des'];
-    $course_time = $_POST['time'];
+    $course_date = $_POST['date'];
+    $course_time = $_POST['time'].":00";
+    $datetime=$course_date." ".$course_time;
     $table_name = "{$roll}_deadlines";
-    $insert = " insert into {$table_name}(title,description,datetm) values('$course_name','$course_des','$course_time')";
+    $insert = " insert into {$table_name}(title,description,datetime) values('$course_title','$course_des','$datetime')";
         $res = mysqli_query($con,$insert);
 
     if($res){
         ?>
         <script>
-            alert("insrted sussesfully");
+            alert("Inserted Successfully");
             location.replace("new_deadline.php");
         </script>
         <?php
@@ -22,7 +24,7 @@ if(isset($_POST['deadline_time'])){
     else{
         ?>
         <script>
-            alert("not <?php echo $table_name; ?> inserted");
+            alert("Error!");
             location.replace("new_deadline.php")
         </script>
         <?php

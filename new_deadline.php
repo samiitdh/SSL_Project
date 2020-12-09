@@ -1,9 +1,7 @@
-<?php include_once 'dbcom.php'; ?>
-
 <html>
 <head>
     <meta charset="UTF-8">
-    <title> Event Coordinator </title>
+    <title> New Deadline </title>
     <meta charset="utf-8">  
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
@@ -33,6 +31,7 @@
             padding:1px 0 !important;
         }
         footer {
+            position: absolute;
             bottom: 0;
             width: 100%;
             color: #fff;
@@ -41,10 +40,10 @@
         }
     </style>
 </head>
-    <body>
-    <div class="jumbotron text-center" style="margin-bottom:0">
-  <h3>Event Coordinator</h3>
-  <p> Add or remove event coordinator </p>
+<body>
+<div class="jumbotron text-center" style="margin-bottom:0">
+  <h3>New Deadline</h3>
+  <p> Enter relevant information </p>
 </div>
 <nav class="navbar navbar-inverse">
     <div class="container-fluid">
@@ -57,7 +56,7 @@
         </div>
         <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="list-inline" class="nav navbar-nav">
-            <form action='home_admin.php' method='POST'>
+            <form action='faculty_courses.php' method='POST'>
                 <li><button style="float: left; margin-right:16px" type ="submit" class="btn btn-info" value="Go back">Back</button></li>
             </form>
         </ul>
@@ -69,60 +68,55 @@
         </div>
     </div>
 </nav>
+
 <div class="container-fluid text-center">    
   <div class="row content">
     <div class="col-sm-2 sidenav">
     </div>
     <div class="col-sm-8 text-left"> 
-    <h2> Please enter relevant information </h2>
-        <form action='event_coordinator_helper.php' method='POST'>
-        <div class="form-group">
-            <label for="r_number"> <b> Roll Number </b> </label>
-            <input class="form-control" type="number" name="r_number">
-        </div>
-        <div class="form-group">
-            <label> 
-                <input class="btn btn-primary" type="submit" name="add_EC" value="Add">
-            </label>
-        </div>
-        </form>
+      
+<?php
+session_start();
+$roll = $_SESSION['roll_no'];
+include './dbcom.php';
+$table_name = "courses";
+$sql = "SELECT * FROM `courses` WHERE `roll_number`=$roll;";
+$result = mysqli_query($con, $sql);
+$row = mysqli_fetch_assoc($result);
+$name = $row['name'];
 
-    <h2 class=center> Table of Event Coordinators </h2>
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th> Name </th>
-                <th> Roll Number </th>
-                <th> Remove Event Coordinator Role </th>
-            </tr> 
-        </thead>
-        <?php
-            $sql = "SELECT * FROM `individual` WHERE `role` = 'studentEC' OR `role` = 'facultyEC';";
-            $result = mysqli_query($con, $sql);
-            $num_rows = mysqli_num_rows($result);
+mysqli_close($con);
+?>
 
-            if ($num_rows > 0)
-            {
-                while ($row = mysqli_fetch_assoc($result))
-                {   
-                    ?>
-                    <tr>
-                        <td> <?php echo $row['name']  ?> </td>
-                        <td> <?php echo $row['roll_no']  ?> </td>
-                        <td> 
-                            <form action='event_coordinator_helper.php' method='POST'>
-                                <label> 
-                                    <button class="btn btn-danger" type="submit" name="delete_EC" value=<?= $row['unique_id'] ?>> Remove role </button>
-                                </label>
-                            </form>
-                        </td>
-                    </tr>
-                    <?php
-                }
-            }
-        ?>
-    </table>
-    </div>
+<form action = "./deadline_validation.php" method = "POST">
+<div class="form-group">
+       <label for="name"> Course </label> 
+       <select name = "name">
+              <option value =<?=$name?>><?php echo $name; ?></option>
+       </select>
+</div>
+<div class="form-group">
+       <label for="name"> Title </label> 
+       <input class="form-control" type = "text" name = "title" required="">
+</div>
+<div class="form-group">
+       <label for="des"> Description </label> 
+       <input class="form-control" type = "text" name = "des" required="">
+</div>
+<div class="form-group">
+       <label for="date"> Date </label> 
+       <input class="form-control" type = "date" name = "date" required="">
+</div>
+<div class="form-group">
+       <label for="time"> Time </label> 
+       <input class="form-control" type = "time" name = "time" required="">
+</div>
+<div class="form-group">
+       <button class="btn btn-primary" type = "submit" name ="deadline_time">Submit</button>
+</div>
+</form>
+
+</div>
     <div class="col-sm-2 sidenav">
     </div>
   </div>
@@ -132,4 +126,4 @@
   <p>Adiutor by IIT Dharwad </p>
 </footer>
 
-</body
+</body>

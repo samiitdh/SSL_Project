@@ -1,4 +1,5 @@
 <?php
+error_reporting(0); 
 session_start();
 if(isset($_POST["add_it"])){
     $name = $_POST["course_name"];
@@ -13,7 +14,7 @@ if(isset($_POST["add_it"])){
         if($result_count == 0){
             ?>
             <script>
-                alert("username not exits");
+                alert("Username Doesn't Exist");
                 location.replace("add_courses.php");
             </script>
             <?php
@@ -21,16 +22,14 @@ if(isset($_POST["add_it"])){
         else if($result_count > 1){
             ?>
             <script>
-                alert("can't add");
+                alert("Error Adding");
                 location.replace("add_courses.php");
             </script>
             <?php
         }
         else{
-            // $pizzas = mysqli_fetch_all($result,MYSQLI_ASSOC);
-            // mysqli_free_result($result);
-            // $id = $pizzas[0]['name'];
-            $insert = " insert into courses(name,instuctor,roll_number) values('$name','$ins','$roll')";
+
+            $insert = "INSERT INTO `courses` (`name`, `instructor`, `roll_number`) VALUES ('$name','$ins','$roll')";
             
             $res = mysqli_query($con,$insert);
             if($res){   
@@ -46,11 +45,11 @@ if(isset($_POST["add_it"])){
                     id INT(6) UNSIGNED AUTO_INCREMENT PRIMARY KEY,
                     title VARCHAR(30) NOT NULL,
                     description VARCHAR(255) NOT NULL,
-                    datetm DATETIME NOT NULL)";
+                    datetime DATETIME NOT NULL)";
                 if ($con->query($sqli2) === TRUE) {
                 ?>
                 <script>
-                alert("new course is added");
+                alert("New Course Added");
                 location.replace("view_courses.php");
                 </script>
                 <?php
@@ -58,7 +57,7 @@ if(isset($_POST["add_it"])){
                 else{
                     ?>
                 <script>
-                alert("deadline is not added");
+                alert("Deadlines adding error");
                 location.replace("view_courses.php");
                 </script>
                 <?php
@@ -67,7 +66,7 @@ if(isset($_POST["add_it"])){
                 echo "Error creating table: " . $con->error;
                 ?>
                 <script>
-                alert("course can't be added <?php echo $idd ?> try again");
+                alert("Course can't be added <?php echo $idd ?> try again");
                 location.replace("add_courses.php");
                 </script>
                 <?php
@@ -76,7 +75,7 @@ if(isset($_POST["add_it"])){
         else{
             ?>
         <script>
-            alert("data not gone to table");
+            alert("Error!");
             location.replace("add_courses.php");
         </script>
         <?php
@@ -87,7 +86,7 @@ if(isset($_POST["add_it"])){
 else{
     ?>
         <script>
-            alert("invalide instuctor roll_no");
+            alert("Invalid instructor");
             location.replace("add_courses.php");
         </script>
         <?php

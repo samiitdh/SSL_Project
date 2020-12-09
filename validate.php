@@ -9,8 +9,8 @@
         $password = $_POST['password'];
 
 
-        $username_serach =" select * from individual where roll_no = '$username' ";
-        $query = mysqli_query($con,$username_serach);
+        $username_search =" select * from individual where roll_no = '$username' ";
+        $query = mysqli_query($con,$username_search);
 
         $email_count = mysqli_num_rows($query);
         if($email_count){
@@ -46,11 +46,12 @@
                     $_SESSION['admin'] =1;
                     if($username[0] == "9"){
                         // to home_faculty.php
+                        $_SESSION['roll_no'] = $_POST['roll_no'];
                         header('location:home_faculty.php');
                     }
                     else if($username == "69420"){
                         // to home_admin.php
-                        header('location:index.php');
+                        header('location:home_admin.php');
                     }
                     else{
                         // to home_student.php
@@ -60,12 +61,12 @@
             }else{
                 $_SESSION['password'] = 1;
                 unset($_SESSION["user"]);
-                header('location:login.php');
+                header('location:index.php');
             }
         }else{
             $_SESSION['user'] =1;
             unset($_SESSION["password"]);
-            header('location:login.php');
+            header('location:index.php');
         }
 
     }

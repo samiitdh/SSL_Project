@@ -15,7 +15,7 @@ session_start();
     if($res){
         ?>
         <script>
-            alert("insrted sussesfully");
+            alert("Added successfully");
             location.replace("add_students.php");
         </script>
         <?php
@@ -23,7 +23,7 @@ session_start();
     else{
         ?>
         <script>
-            alert("not <?php echo $table_name; ?> inserted");
+            alert("Error!");
             location.replace("add_students.php")
         </script>
         <?php
@@ -32,7 +32,7 @@ session_start();
     else{
         ?>
         <script>
-            alert("not yes inserted");
+            alert("Error!");
             location.replace("add_students.php");
         </script>
         <?php   

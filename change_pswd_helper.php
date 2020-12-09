@@ -1,7 +1,7 @@
 <?php
 
 include_once 'dbcom.php';
-
+error_reporting(0);
 $roll_no = $_POST['roll_no'];
 $old_pass = $_POST['old_passwd'];
 $new_pass = $_POST['new_passwd'];
@@ -19,20 +19,44 @@ if($num_rows > 0)
         $result = mysqli_query($con, $sql);
         if($result)
         {
+            ?>
+            <script>
+            alert("Password Changed");
+            location.replace("change_pswd.php");
+            </script>
+            <?php
             echo "Password Changed";
         }
         else
         {
+            ?>
+            <script>
+            alert("Problem Changing Password!");
+            location.replace("change_pswd.php");
+            </script>
+            <?php
             echo "Problem Changing Password!";
         }
     } 
     else
-    {
+    {   
+        ?>
+        <script>
+        alert("Old Password Incorrect");
+        location.replace("change_pswd.php");
+        </script>
+        <?php
         echo "Old Password Incorrect";
     }  
 }
 else
-{
+{   
+    ?>
+    <script>
+    alert("Please enter roll number correctly");
+    location.replace("change_pswd.php");
+    </script>
+    <?php
     echo "Please enter roll number correctly";
 }
 ?>

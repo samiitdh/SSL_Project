@@ -1,35 +1,27 @@
 <?php
 session_start();
 include './dbcom.php';
-if(isset($_POST['A_delete'])){
-    $id_to_delete = $_POST['id_with'];
-?>
-    <script>
-    var r = confirm("Are you sure you want to delete?");
-        if (r == true) {
-        <?php
-            $sql = "DELETE FROM individual WHERE unique_id = $id_to_delete";
-            if(mysqli_query($con,$sql)){
-                header('location:admin_view.php');
-                // echo "done";
-            }
-            else{
-                echo 'query error '.mysqli_error($conn);
-                header('location:admin_view.php');
-            }
-        ?>
-        } else {
-            
-        }
-    </script>
-    <?php   
+
+if(array_key_exists('A_delete', $_POST))
+{
+    $roll = $_POST['A_delete'];
+    echo "$roll";
+    $sql = "DELETE FROM `individual` WHERE `roll_no` = $roll";
+    $delete= mysqli_query($con, "DROP TABLE `{$roll}_timetable`;");
+    $delete2= mysqli_query($con, "DROP TABLE `{$roll}_events`;");
+
+    if(mysqli_query($con,$sql) && ($delete != FALSE) && ($delete2 != FALSE)){
+        echo "done";
+        header('location:admin_view.php');
+    }
+    else{
+        echo "Problem Deleting";
+        echo 'query error '.mysqli_error($con);
+    } 
 }
-else{
-    echo "no yes";
+else
+{
     header('location:search.php');
 }
-
-
-    
-mysqli_close($conn);
+header('location:search.php');
 ?>
