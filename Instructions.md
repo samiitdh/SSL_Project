@@ -78,7 +78,7 @@ If unique number is of admin take to home_admin.php, for faculty take to home_fa
 If password or unique number wrong, take to same login.php and display password/unique number wrong.\
 Same in case password or unique number are not entered at all. \
   
-  Added Additional php file 2.1 - dbcom for data base communication. - Done by Mayank \
+  Added Additional php file 2.1 - dbcom for data base communication. \
   
 Administrator:
 3rd "home_admin.php" \
@@ -96,7 +96,7 @@ This page has a form with "Name", "Roll Number", "Role" fields. (Adding a check 
 For "Role" field, it has to have two options "Student", "Faculty", admin should select one. \
 default password is "{role}_{rollno}" where {role} = {student,faculty} and {rollno} is the roll number, later we will have a button for student and faculty to change their password.\
 
-6th "event_coordinator.php" - Done by Sameer\
+6th "event_coordinator.php" \
 In this page, the accounts who are event coordinators are displayed as a table. The role of an individual is "studentEC" if an individual is both event coordinator and student and "facultyEC" if he is event coordinator and faculty.
 The table will have the columns "Name", "Roll Number", "Role"(Faculty/Student); and a "Remove Role" button for every row which the removes the role of event coordinator for that account.
 
