@@ -68,11 +68,11 @@ Note that to login we use "unique Number" and Password, where admin has unique n
 for students it is their roll number and for faculty it is 9190010012, where starting 9 means faculty and \
 next 19 is year they joined and 00 is just like that, next 1 means CSE faculty, 00, next 12 means serial number \
 \
-1st PHP Page: "login.php" - Done by Mayank\
+1st PHP Page: "login.php" \
 Has a basic form with two entrires - "Unique Number" and "Password"\
 If correct data entered display welcome if not take to same page and display "wrong password/roll number"\
 \
-2nd PHP Page - Done by Mayank:
+2nd PHP Page \
 **Note** Here we use "validate.php" file which will check the role based on unique number and also check for password correctness\
 If unique number is of admin take to home_admin.php, for faculty take to home_faculty.php and for student take to home_student.php\
 If password or unique number wrong, take to same login.php and display password/unique number wrong.\
@@ -81,17 +81,17 @@ Same in case password or unique number are not entered at all. \
   Added Additional php file 2.1 - dbcom for data base communication. - Done by Mayank \
   
 Administrator:
-3rd "home_admin.php" - Done by Mayank\
+3rd "home_admin.php" \
 This page should contain all the buttons which can redirect the admin to all the different pages related to his tasks. 
 The tasks he can perform are: add or delete an account, view and search an existing account. 
 
-4th "admin_view.php" - Done by Mayank\
+4th "admin_view.php"\
 Through this page, admin can view,search and delete any account.
 The accounts are displayed as two tables - one for faculty and other for students. By default, the tables show all the accounts. When a query is entered, the tables then show the accounts matching that query. There will be a delete button here for every row which will ask for confirmation (a javascript alert) and then delete the account if pressed "Yes". \
 
 The columns of the tables will be Name, Roll Number and a delete button for every row.\
 
-5th "add_individual.php" - Done by Sameer\
+5th "add_individual.php" \
 This page has a form with "Name", "Roll Number", "Role" fields. (Adding a check for roll number uniqueness while adding individual is up for discussion)
 For "Role" field, it has to have two options "Student", "Faculty", admin should select one. \
 default password is "{role}_{rollno}" where {role} = {student,faculty} and {rollno} is the roll number, later we will have a button for student and faculty to change their password.\
@@ -102,71 +102,71 @@ The table will have the columns "Name", "Roll Number", "Role"(Faculty/Student); 
 
 
 Event Coordinator:
-7th "home_eventco.php" - Done by Sathvik\
+7th "home_eventco.php" \
 Modify init.php to include a table "event_requests" with the columns "Title" and "Description" and table "events" to include a title\
 This page will have two buttons - "View Events" (to eventco_view.php) and "New event" (to add_events.php)\
 The requested event additions will be displayed here with "Title", "Description" and a button to accept or deny. The 
 
-8th "eventco_view.php" - Done by Sathvik\
+8th "eventco_view.php" \
 The events are displayed as a table with "Title", "Description"; with a delete button for every row.
 
-9th "add_events.php" - Done by Sathvik\
+9th "add_events.php" \
 A html form with "Title", "Description" which adds a row to the "events" table.
 
 Faculty:\
-"home_faculty.php" - Done by Sathvik\
+"home_faculty.php"\
 In this page, there are three buttons - "Events"(to view_events.php) "Change Password"(to change_pswd.php) and "View Room Allotment"(to faculty_room.php)
 
-"view_events.php" - Done by Sathvik\
+"view_events.php" \
 In this page, posted events are displayed as a table with a button "Add to timetable" for every row which is then added to the timetable (To be done later). There is a button "Request Event" (to event_req.php). If the individual is an event coordinator, there is a button "Go to Event Coordinator homepage" (to home_eventco.php).
 
-"change_pswd.php" - Done by Sameer\
+"change_pswd.php"\
 This form gets roll number via POST when we press change password button in other files.
 An html form with "Current Password" and "New Password". On submission check if current password is correct and then proceed to change the password. If not show a javascript alert.
 
-"event_req.php" - Done by Sameer\
+"event_req.php" \
 A html form with "Title" and "Description" which are then added to event_requests table and on submission gives an alert "Event Request Submitted"
 
-Below Done by Sameer\
+\
 Modify init.php to include a "rooms" table with columns "unique_id", "date","room_no", "from_time", "to_time", "owner" and a table "room_reqs" table with similar columns as "rooms"
-"faculty_room.php" - Done by Sameer\
+"faculty_room.php" \
 In this page, there is a text box for entering date which will display the room occupancy info for that date as a table with columns "Room Number", "Time" and "Taken By". There is a button at the bottom "Request Room" (to room_req.php)
 
-"room_req.php" - Done by Sameer\
+"room_req.php" \
 This page has an html form with "Room Number"(a dropdown list with default room numbers) "Date" "Time". All these are stored in the "room_reqs" table along with the user's name who made the request.
 
 Students:\
-"home_student.php" - Done by Sathvik\
+"home_student.php" \
 This page has two buttons - "Change Password"(to change_pswd.php) and "Events"(to view_events.php) **NOTE** Students make use of the same php files as faculty ("view_events.php", "event_req.php")for events feature. See if this idea is good.
 
 
 Administrator:\
 Add a button to home_admin.php "Room Occupancy" to take him to "admin_room.php" - Done by Sathvik
 
-"admin_room.php" - Done by Sathvik\
+"admin_room.php" \
 In this page, there is a text box for entering the room number which a table with the columns "Taken By", "Date", "Time" (from the "rooms" table). In the bottom of this page, there is a button "View Room Requests"(To admin_roomreq.php)
 
-"admin_roomreq.php" - Done by Sathvik\
+"admin_roomreq.php" \
 This page displays the contents of the mysql table "room_reqs" as an html table with a button for every row "Accept" which deletes the corresponding row in "room_reqs" but adds it to the "rooms" table and "Deny" which deletes the corresponding row in "room_reqs" table.
 
-"view_courses.php" - taken by mayank \
+"view_courses.php" \
 Modify home_admin.php to include buttons - "View Course List"(view_courses.php) and "Add a Student to a Course"(to add_students.php) \
 The course name and faculty names are displayed as a table with "delete" for every row which deletes the mysql tables "$id_courses" and the corresponding row in "courses"
 There is a button at the bottom "Add Course" which takes us to "add_courses.php"
 
-"add_courses.php" - taken by mayank\
+"add_courses.php" \
 Modify init.php to include a table "courses" with columns "name" "instuctor" "unique_id".
 A html form with input for name of faculty and course name. Add a check for if name of individual is faculty or student. 
 When submission of form is succesful, create a table through this php "$id_courses" (where $id is the unique id of course) with columns "name" "roll number" and "unique_id"(of the student).
 
-"add_students.php" - taken my mayank \
+"add_students.php" \
 A html form with a dropdown list of course names(from courses table) and "Roll Number" of the student which on submission adds a row to the table ($id_courses) get $id from courses table and name of the student from individual table.
 
 Faculty:
-modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines of Other Courses" (to faculty_deadlines.php) - Done by Sathvik\
+modify home_faculty.php to include a button "View My Courses"( to faculty_courses.php) and "View Deadlines of Other Courses" (to faculty_deadlines.php) \
 
-Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "datetime" whenever a course is created with unique_id $id. - Taken by Mayank\
-"faculty_courses.php" - Done by Sathvik\
+Modify add_courses.php to create a table "$id_deadlines" table with columns "title" "description" "datetime" whenever a course is created with unique_id $id. \
+"faculty_courses.php"\
 In this page, a dropdown list of courses taught by this faculty which on submitting displays a table of course deadlines with delete button for every row. At the bottom of the page, there is a button "Add a Deadline to this Course" (to "new_deadline.php"). 
 
 "new_deadline.php"
@@ -175,14 +175,14 @@ This page has a form with a dropdown list of courses taught by this faculty. The
 "faculty_deadlines.php"
 Here, we have a dropdown list of dates which on submitting shows all the deadlines (for every course) on that day.
 
-Modify add_individual.php to create a table "{unique_id}_timetable" table with columns "title" "description" "datetime" and "{unique_id}_events" with same columns as events.(unique_id of individual). - Done by Sameer
+Modify add_individual.php to create a table "{unique_id}_timetable" table with columns "title" "description" "datetime" and "{unique_id}_events" with same columns as events.(unique_id of individual).\
 
 UPDATE "view_events.php"
-When "Add to timetable" is clicked for an event, it is added to {unique_id}_events table. - Done by Sathvik
+When "Add to timetable" is clicked for an event, it is added to {unique_id}_events table. \
 
-UPDATE "home_student.php": - Done by Sathvik\
+UPDATE "home_student.php": \
 This page has two html tables - Deadlines and My Events. Deadlines show the deadlines of the courses related to the individual (Except those from the {unique_id}_timetable) for that particular day. Every row has a "Mark as Done" button which adds a row to {unique_id}_timetable and wont be shown in the html table. My Events table shows the events from {unique_id}_events table with a delete button for every row which deletes the corresponding mysql row.
 
 
-UPDATE "home_faculty.php": - Done by Sathvik\
+UPDATE "home_faculty.php": \
 same updates as for home_student.php
